@@ -9,7 +9,7 @@ bool is_local_min(int** matrix,int n, int m, int i, int j)
 			{
 				return false;
 			}
-			if (i < n - 1 && matrix[i + 1][j] < matrix[i][j])
+			if (i < n - 1 && matrix[i + 1][j] <= matrix[i][j])
 			{
 				return false;
 			}
@@ -17,7 +17,7 @@ bool is_local_min(int** matrix,int n, int m, int i, int j)
 			{
 				return false;
 			}
-			if (j < m - 1 && matrix[i][j + 1] < matrix[i][j])
+			if (j < m - 1 && matrix[i][j + 1] <= matrix[i][j])
 			{
 				return false;
 			}
